@@ -42,3 +42,15 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
  Have fun testing and improving it! 😎
 
 
+# Features to Implement
+
+## Pomodoro
+- Timer, start/stop, skip button -2 people
+
+## Extra functionality for todos
+- [X] Inital priority
+- Notes to the todos 
+- Arrows on todo
+
+Testing@gmail.com
+TesterNoTesting
