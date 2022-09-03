@@ -5,22 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <% if (locals.messages.errors) { %>
-        <% messages.errors.forEach( el => { %>
-            <div class="alert alert-danger"><%= el.msg %></div>
-        <% }) %>    
-    <% } %>
-    <% if (locals.messages.info) { %>
-        <% messages.info.forEach( el => { %>
-            <div class="alert alert-danger"><%= el.msg %></div>
-        <% }) %>    
-    <% } %>
-    <form action="/login" method="POST">
-        <input type="email" name="email" placeholder="Email">
-        <input type="password" name="password" placeholder="Password">
-        <input type="submit">
-    </form>
+    <header>
+    <h1> Pomodoro Todo </h1>
+    </header>
+      
+      <section class="form-container">
+        <div class="form-container__details">
+          <div class="form-container__title"> Welcome Back! </div>
+          <form class="form" action="/login" method="POST">
+            <div class="form__field"> 
+                <label class="form__label" for="email">EMAIL
+                  <input class="form__input" type="email" name="email">
+                </label>
+            </div> 
+            <div class="form__field"> 
+                <label class="form__label" for="password">PASSWORD
+                  <input class="form__input" type="password"
+                  name="password">
+                </label>
+            </div> 
+            <% if (locals.messages.errors) { %>
+              <% messages.errors.forEach( el => { %>
+              <div class="alert alert-danger"><%= el.msg %></div>
+              <% }) %>    
+            <% } %>
+            <% if (locals.messages.info) { %>
+              <% messages.info.forEach( el => { %>
+                <div class="alert alert-danger"><%= el.msg %></div>
+              <% }) %>    
+            <% } %>
+            <button class="form__submit" type="submit"> Login </button>
+          </form>
+          <div class="form-container__line-divider"> </div> 
+          <div class="form-container__links"> 
+            <a href="/signup" class="form-container__link"> Create Account </a>
+          </div> 
+        </div>
+      </section>
 </body>
 </html>

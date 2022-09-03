@@ -49,8 +49,15 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 ## Extra functionality for todos
 - [X] Inital priority
-- Notes to the todos 
-- Arrows on todo
+- [ ] Notes to the todos -- Jonathan taking this
+- [ ] Arrows on todo  -- Kat 
 
 Testing@gmail.com
 TesterNoTesting
+
+
+# Work Log
+## Sept 2 
+- CSS for all pages
+- assigned features to people. If you want to jump on a feature, message that person on discord.
+
