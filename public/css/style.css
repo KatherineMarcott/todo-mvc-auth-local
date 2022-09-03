@@ -1,3 +1,5 @@
+/* Generic Styling  */
+
 :root{
   --midnight-blue:#145da0;
   --dark-blue:#0c2d48;
@@ -15,6 +17,7 @@
 
 body{
   background-color:var(--midnight-blue);
+  padding: 5rem 0; 
 }
 h1{
     color: var(--baby-blue);
@@ -22,6 +25,7 @@ h1{
     margin-bottom: 1.5rem; 
     text-align:center; 
 }
+
 .completed{
     text-decoration: line-through;
     color: gray;
@@ -29,6 +33,8 @@ h1{
 .not{
     text-decoration: underline;
 }
+
+/* Buttons */
 
 .button-div{
   display: flex;
@@ -55,6 +61,8 @@ a{
   color:var(--white);
   font-size: 2rem;
 }
+
+/* Forms */
 
 .form-container {
   margin: 0 auto; 
@@ -137,6 +145,8 @@ a{
   color: var(--midnight-blue); 
   text-decoration: underline; 
 }
+
+/* Form Media Queries */
 
 @media (max-width: 600px){
   h1 {

@@ -5,30 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/todos.css">
+    
 </head>
 <body>
+  <div class = "box" id = "heading">
     <h1>Tasks</h1>
-    <ul>
+  </div>
+
+  <div class = "box">
+    
     <% todos.forEach( el => { %>
-            <li class='todoItem' data-id='<%=el._id%>'>
-                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+      <div class = "item">
+        <input type = "checkbox">
+        <p class='todoItem' data-id='<%=el._id%>'>
+          <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
               <span> <%= el.priority %>  </span>
                 <span class='del'> Delete </span>
-            </li>
-    <% }) %>    
-    </ul>
+            </p>
+      </div>
+            
+                
+    <% }) %>  
 
     <h2><%= user.userName %> has <%= left %> things left to do.</h2>
 
-    <form action="/todos/createTodo" method='POST'>
-        <input type="text" placeholder="Enter Todo Item" name='todoItem'>
-        <input type="text" placeholder="add priority" name='priority'>
-        <input type="submit">
+    <form class="item" action="/todos/createTodo" method='POST'>
+        <input type="text" placeholder="Add Task" name='todoItem'>
+        <input type="text" placeholder="Priority" name='priority'> 
+        <button type="submit" name="button">+</button>
     </form>
-
+    
+  </div>
+    
+  <div class = "btn">
     <a href="/logout">Logout</a>
-
+  </div>
+    
     <script src="js/main.js"></script>
 </body>
 </html>

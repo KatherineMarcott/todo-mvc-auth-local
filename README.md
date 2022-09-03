@@ -58,6 +58,8 @@ TesterNoTesting
 
 # Work Log
 ## Sept 2 
-- CSS for all pages
-- assigned features to people. If you want to jump on a feature, message that person on discord.
+- Assigned CSS pages to people: Karan - Todos page, Jonathan - HomePage, Kat - Sign-up & Login page. 
+- Completed CSS for Sign-Up & Login page. 
+- Completed CSS for HomePage.
+- Assigned features to people. If you want to jump on a feature, message that person on discord.
 
