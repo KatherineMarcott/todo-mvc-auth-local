@@ -1,16 +1,34 @@
+:root{
+  --midnight-blue:#145da0;
+  --dark-blue:#0c2d48;
+  --blue:#2e8bc0;
+  --baby-blue:#b1d4e0;
+  --white:#fff
+}
+
 html {
   background-color: #E4E9FD;
   background-image: -webkit-linear-gradient(70deg, #2e8bc0 50%, #E4E9FD 50%);
   min-height: 1000px;
   font-family: 'helvetica neue';
+  margin: 0; 
+  padding: 0; 
 }
 
 h1 {
+  text-align: center;
+  margin: 0 auto 2.5rem;
+  color: var(--blue);
+  font-size: 2.5rem;
+  font-family: 'Pacifico', cursive;
+}
+
+h2 {
   color: #fff;
   padding: 10px;
 }
 
-h2{
+h3{
   font-family: Arial;
   font-weight: 200;
   text-align: center;
@@ -66,7 +84,7 @@ form {
   margin-left: 20px;
 }
 
-button {
+.btn-submit {
   min-height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -128,4 +146,22 @@ input[type="text"]:focus {
   background-image: -o-linear-gradient(top, #D61C4E, #1CD6CE);
   background-image: linear-gradient(to bottom, #D61C4E, #1CD6CE);
   text-decoration: none;
+}
+
+/* Pomodoro */
+
+.pomo-container {
+  text-align: center;
+  margin: 0 auto 2.5rem; 
+  max-width: 25rem; 
+  width: 100%;
+  background-color: var(--blue);
+  height: 12rem; 
+  border-radius: 0.5rem;
+}
+
+.pomo-container__timer-minutes,
+.pomo-container__timer-separator,
+.pomo-container__timer-seconds {
+  font-size: 4rem;
 }
