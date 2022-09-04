@@ -69,6 +69,7 @@ p {
   font-size: 20px;
   font-weight: 200;
   color: #00204a;
+  width: 100%;  
 }
 
 input:checked+p {
@@ -148,16 +149,57 @@ input[type="text"]:focus {
   text-decoration: none;
 }
 
+.del { 
+  display: inline-block; 
+  float: right; 
+}
+
+
+
 /* Pomodoro */
 
+.hidden {
+  display: none; 
+}
+
 .pomo-container {
+  color: var(--white);
+  font-weight: 700; 
   text-align: center;
+  text-shadow: 0 2px grey;
   margin: 0 auto 2.5rem; 
+  padding: 2rem; 
   max-width: 25rem; 
-  width: 100%;
   background-color: var(--blue);
-  height: 12rem; 
   border-radius: 0.5rem;
+}
+
+.pomo-container__session-change-button-details {
+  display: flex; 
+  width: 100%; 
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+}
+
+.pomo-container__button {
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem; 
+  background-color: var(--blue);
+  color: white; 
+  border: none; 
+  border-radius: 0.3rem; 
+}
+
+
+.pomo-container__button:hover{
+  cursor: pointer;
+  background-color: var(--midnight-blue);
+}
+
+
+.pomo-container__timer {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
 }
 
 .pomo-container__timer-minutes,
@@ -165,3 +207,20 @@ input[type="text"]:focus {
 .pomo-container__timer-seconds {
   font-size: 4rem;
 }
+
+.pomo-container__start-stop-button {
+  font-size: 1.5rem; 
+  font-weight: 700; 
+  letter-spacing: 0.05rem; 
+  color: var(--blue);
+  padding: 1rem 3rem;
+  background-color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 0 0 var(--baby-blue);
+}
+
+.pomo-container__start-stop-button:hover{
+  cursor: pointer; 
+}
+

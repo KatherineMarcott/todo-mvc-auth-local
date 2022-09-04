@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
     <title>Document</title>
     <link rel="stylesheet" href="css/todos.css">
+    <script src="https://kit.fontawesome.com/2a5293cd7e.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -26,7 +27,8 @@
         <span class="pomo-container__timer-seconds">00</span>
       </div>
       <div class="pomo-container_start-stop-buttons">
-        <button class="pomo-container__start-stop-button">Start</button>
+        <button class="pomo-container__start-stop-button">START</button>
+        <button class="pomo-container__start-stop-button hidden">STOP</button>
       </div>
     </div>
   </section>
@@ -43,7 +45,7 @@
         <p class='todoItem' data-id='<%=el._id%>'>
           <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
               <span> <%= el.priority %>  </span>
-                <span class='del'> Delete </span>
+                <span class='del'> <i class=" fa fa-solid fa-trash" id="customfa"></i> </span>
             </p>
       </div>
             
