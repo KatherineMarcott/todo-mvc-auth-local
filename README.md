@@ -45,12 +45,12 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 # Features to Implement
 
 ## Pomodoro
-- Timer, start/stop, skip button -2 people
+- Timer, start/stop, skip button -2 people - Kat
 
 ## Extra functionality for todos
 - [X] Inital priority
 - [ ] Notes to the todos -- Jonathan taking this
-- [ ] Arrows on todo  -- Kat 
+- [ ] Arrows on todo 
 
 Testing@gmail.com
 TesterNoTesting
@@ -62,4 +62,8 @@ TesterNoTesting
 - Completed CSS for Sign-Up & Login page. 
 - Completed CSS for HomePage.
 - Assigned features to people. If you want to jump on a feature, message that person on discord.
+
+## Sept 3
+- Todo list css continued.
+- Pomodoro Creation started --> CSS completed. No JS functionality as of yet. 
 
