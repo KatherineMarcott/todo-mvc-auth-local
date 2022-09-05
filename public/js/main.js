@@ -109,8 +109,6 @@ function getRemainingTime(endTime) {
   };
 }
 
-const body = document.querySelector('body');
-
 function startTimer() {
   
   let { total } = timer.remainingTime;
@@ -121,7 +119,6 @@ function startTimer() {
   mainButton.dataset.action = 'stop';
   mainButton.textContent = 'STOP';
   mainButton.classList.add('active');
-  body.classList.add('dark-mode');
 
   interval = setInterval(function() {
     timer.remainingTime = getRemainingTime(endTime);
@@ -162,7 +159,6 @@ function stopTimer() {
   mainButton.dataset.action = 'start';
   mainButton.textContent = 'START';
   mainButton.classList.remove('active');
-  body.classList.remove('dark-mode')
 }
 
 function updateClock() {
