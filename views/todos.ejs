@@ -16,19 +16,18 @@
 
   <section class="pomo-container">
     <div class="pomo-container__session-change-buttons">
-      <div class="pomo-container__session-change-button-details">
-        <button class="pomo-container__button">Pomodoro</button>
-        <button class="pomo-container__button">Short Break</button>
-        <button class="pomo-container__button">Long Break</button>
+      <div class="pomo-container__session-change-button-details" id="js-mode-buttons">
+        <button class="pomo-container__button" data-mode="pomodoro">Pomodoro</button>
+        <button class="pomo-container__button" data-mode="shortBreak">Short Break</button>
+        <button class="pomo-container__button" data-mode="longBreak">Long Break</button>
       </div>
       <div class="pomo-container__timer">
-        <span class="pomo-container__timer-minutes">25</span>
-        <span class="pomo-container__timer-separator">:</span>
-        <span class="pomo-container__timer-seconds">00</span>
+        <span class="pomo-container__timer-minutes" id='js-minutes'>25</span>
+        <span class="pomo-container__timer-separator separator">:</span>
+        <span class="pomo-container__timer-seconds" id='js-seconds'>00</span>
       </div>
       <div class="pomo-container_start-stop-buttons">
-        <button class="pomo-container__start-stop-button">START</button>
-        <button class="pomo-container__start-stop-button hidden">STOP</button>
+        <button class="pomo-container__start-stop-button" id="js-btn">START</button>
       </div>
     </div>
   </section>
@@ -52,13 +51,15 @@
                 
     <% }) %>  
 
-    <h3><%= user.userName %> has <%= left %> things left to do.</h3>
+    <h3><%= user.userName %> has <%= left %> things left to do. 
+    </h3>
 
-    <form class="item" action="/todos/createTodo" method='POST'>
+  <form class="item" action="/todos/createTodo" method='POST'>
         <input type="text" placeholder="Add Task" name='todoItem'>
         <input type="text" placeholder="Priority" name='priority'> 
-        <button class="btn-submit" type="submit" name="button">+</button>
-    </form>
+        <button class="btn-submit" type="submit" name="button">+ 
+        </button>
+  </form>
     
   </div>
     
@@ -66,6 +67,6 @@
     <a href="/logout">Logout</a>
   </div>
     
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
