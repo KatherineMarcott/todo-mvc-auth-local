@@ -45,12 +45,17 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 # Features to Implement
 
 ## Pomodoro
-- [X] Timer, start/stop -2 people - Kat
+- [X] Timer, start/stop -2 people
 
 ## Extra functionality for todos
 - [X] Inital priority
-- [ ] Notes to the todos -- Jonathan taking this
-- [ ] Arrows on todo -- Big Pug 
+- [X] Notes to the todos
+- [x] Arrows on todo
+
+## Longer term goals
+- [ ] finished pomos being tracked per task/per user - maybe a box where pomodoro icons appear for every pomo you complete. Then a click and drag to add a pomo to the task. Could be rewarding. 
+- [ ] ability to edit tasks
+- [ ] user stats!
 
 Testing@gmail.com
 TesterNoTesting
@@ -69,4 +74,9 @@ TesterNoTesting
   
 ## Sept 5
 - Finished functionality of pomodoro timer. 
-
+- Added "add note" field to task input
+  - need to update CSS to accommodate newly added space inside input fields & note appearance in task list after submit
+    - CSS --> increased .box max-width from 400px to 500px to accommodate added "notes" input
+    - CSS --> added 20px padding-left to notes when added to task list (.todoNotes in todos.css)
+- Reordering Implemented - Neal
+- Added favicon - Neal

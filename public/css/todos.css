@@ -43,7 +43,7 @@ h3{
 }
 
 .box {
-  max-width: 400px;
+  max-width: 500px;
   margin: 50px auto;
   background: white;
   border-radius: 5px;
@@ -53,6 +53,9 @@ h3{
 #heading {
   background-color: #2e8bc0;
   text-align: center;
+}
+.todoNote{
+  padding-left: 20px
 }
 
 .item {
@@ -153,7 +156,7 @@ input[type="text"]:focus {
   text-decoration: none;
 }
 
-.del { 
+.del, .up, .down { 
   display: inline-block; 
   float: right; 
 }

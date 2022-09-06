@@ -16,6 +16,9 @@ const TodoSchema = new mongoose.Schema({
   priority: {
     type: Number,
     required: true,
+  },
+  todoNote: {
+    type: String
   }
 })
 
