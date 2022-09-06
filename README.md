@@ -80,3 +80,8 @@ TesterNoTesting
     - CSS --> added 20px padding-left to notes when added to task list (.todoNotes in todos.css)
 - Reordering Implemented - Neal
 - Added favicon - Neal
+
+## Sept 6
+- added padding between the up, down and trash icons
+- added padding to the entire notes box to avoid logout button touching the border of the box
+- added cursors to the buttons so that when user hovers, the mouse changes

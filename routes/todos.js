@@ -15,6 +15,10 @@ router.put('/upTodo', todosController.upTodo)
 
 router.put('/downTodo', todosController.downTodo)
 
+router.put('/editTodo', todosController.editTodo)
+
 router.delete('/deleteTodo', todosController.deleteTodo)
+
+
 
 module.exports = router

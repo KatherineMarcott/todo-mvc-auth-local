@@ -51,6 +51,7 @@
           <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
           <span class='todoNote'> <%= el.todoNote %>  </span>
           <span class='del'> <i class=" fa fa-solid fa-trash-can" id="customfa"></i> </span>
+          <span class="edit"> <i class="fa fa-solid fa-edit"></i> </span>
           <span class="down"> <i class="fa fa-solid fa-circle-down"></i> </span>
           <span class="up"> <i class="fa fa-solid fa-circle-up"></i> </span>
         </p>
@@ -76,7 +77,7 @@
   <div class = "btn">
     <a href="/logout">Logout</a>
   </div>
-    
+</div>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -3,6 +3,7 @@ const todoItem = document.querySelectorAll('span.not')
 const todoComplete = document.querySelectorAll('span.completed')
 const upTodos = document.querySelectorAll('span.up')
 const downTodos = document.querySelectorAll('span.down')
+const editTodos = document.querySelectorAll('span.edit')
 
 Array.from(deleteBtn).forEach((el)=>{
     el.addEventListener('click', deleteTodo)
@@ -22,6 +23,10 @@ Array.from(upTodos).forEach((el) => {
 
 Array.from(downTodos).forEach((el) => {
     el.addEventListener('click', downTodo)
+})
+
+Array.from(editTodos).forEach((el) => {
+    el.addEventListener('click', editTodo)
 })
 
 async function deleteTodo(){
@@ -109,6 +114,23 @@ async function downTodo() {
         const data = await response.json()
         console.log(data)
         location.reload()
+    } catch (err) {
+        console.log(err)
+    }
+}
+
+async function editTodo() {
+    const todoId = this.parentNode.dataset.id
+    try {
+        const response = await fetch('todos/editTodo', {
+            method: 'put',
+            headers: { 'Content-type': 'application/json' },
+            body: JSON.stringify({
+                'todoIdFromJSFile': todoId
+            })
+        })
+        const data = await response.json()
+        console.log(data)
     } catch (err) {
         console.log(err)
     }
