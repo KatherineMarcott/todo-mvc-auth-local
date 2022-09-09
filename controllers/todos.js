@@ -75,8 +75,8 @@ module.exports = {
   editTodo: async(req, res) => {
     try{
       await Todo.replaceOne({ _id: req.body.todoIdFromJSFile }, {
-        todo: req.body.
-      })
+        todo: req.body
+        })
     }catch(err){
       console.log(err)
     }
